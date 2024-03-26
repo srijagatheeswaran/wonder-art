@@ -93,6 +93,7 @@ td input{
     width: 50px;
     text-align: center;
     outline: none;
+    border: 1px solid balck;
 }
 
 .total{
@@ -103,8 +104,9 @@ td input{
 .total table {
     border-top: 5px solid yellow;
     width: 100%;
-    max-width: 440px;
+    max-width: 30%;
     margin: 0 75px;
+    
     
 }
 td:last-child{
@@ -113,18 +115,171 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
+.order{
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
 .orderbtn{
     position:absolute;
-    right: 5%;
+    right: 4%;
+    bottom: 20px;
     padding: 10px;
     border-radius: 5px;
     border: none;
     color: white;
     background-color: rgb(92, 92, 240);
     margin-top: 20px;
+    margin-right: 20px;
 }
 .orderbtn:hover{
     color: rgb(92, 92, 240);
     background-color: white;
     border: 2px solid rgb(92, 92, 240);
+}
+#menu{
+    display: none;
+}
+@media(max-width:1000px){
+    .orderbtn{
+        right: 2%;
+       }
+    .cartproduct p{
+        font-size: 16px;
+    }
+    .cartproduct button{
+        font-size: 12px;
+        
+    }
+    .cart{
+        margin: 80px 3%;
+    }
+    .total table{
+        margin: 0 31px
+    }
+    .cart{
+        margin-bottom: 50px;
+
+    }
+    
+}
+@media(max-width:784px){
+    
+    .content a{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .logo{
+
+        font-size: 20px;
+   }
+   /* .orderbtn{
+    right: 9%;
+} */
+
+.cartproduct p {
+    font-size: 11px;
+}
+.imgcontent{
+    height: 73px;
+}
+  
+
+}
+@media(max-width:666px){
+    .cartproduct{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: yellow;
+        height: 300px;
+        margin-top: 71px;   
+        padding-top: 58px;
+        display: none;
+    }
+    .logo{
+        margin-top: 22px;
+        margin-left: 28px;
+    }
+    
+    #menu{
+        display: block;
+        position: absolute;
+        top:30px;
+        right: 3%;
+    }
+    .cartproduct p{
+        font-size: 14px;
+        padding: 0 0;
+    }
+    .imgcontent{
+        padding: 5px 0;
+    }
+    .total table{
+        margin: 0 20px;
+        max-width: 40%;
+    }
+    
+}
+@media(max-width:490px){
+    
+    #menu{
+        
+        right: 5%;
+    }
+
+
+}
+
+@media(max-width:375px){
+    .content{
+        left: 14px;
+        margin-top: 71px;
+        width: 92%;
+       } 
+    th{
+        font-size: 13px;
+        text-align: center;
+    }
+    .cartproduct img {
+        height: 85px;
+        width: 85px;
+    }
+    .cartproduct p {
+        font-size: 11px;
+        
+    }
+    td input{
+        width: 33px;
+    }
+    td {
+        padding: 10px 10px;
+    }
+    .total table{
+        margin: 0 12px;
+        max-width: 48%;
+    }
+    .orderbtn {
+        right: -1%;
+        font-size: 12px;
+    }
+      
+    
+
+}
+@media(max-width:325px){
+    
+
+
 }

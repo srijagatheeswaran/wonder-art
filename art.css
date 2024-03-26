@@ -92,3 +92,82 @@ body{
     outline: none;
     
 }
+#menu{
+    display: none;
+}
+@media(max-width:784px){
+    
+    .content a{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .logo{
+
+        font-size: 20px;
+   }
+}
+@media(max-width:666px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: yellow;
+        height: 300px;
+        margin-top: 71px;   
+        padding-top: 58px;
+        display: none;
+    }
+    .logo{
+        margin-top: 22px;
+        margin-left: 28px;
+    }
+    
+    #menu{
+        display: block;
+        position: absolute;
+        top:30px;
+        right: 3%;
+    }
+}
+@media(max-width:460px){
+    
+    #menu{
+        
+        right: 5%;
+    }
+
+
+}
+@media(max-width:425px){
+    
+   .content{
+    left: 32px;
+    margin-top: 71px;
+    width: 84%;
+   }
+
+
+}
+@media(max-width:375px){
+    .content{
+        left: 14px;
+        margin-top: 71px;
+        width: 92%;
+       } 
+      
+    .products img {
+        height: 284px;
+        width: 277px;
+    }  
+    .pro1{
+        width: 87%;
+        padding: 8px;
+        margin: 20px 13px;
+    } 
+
+}
