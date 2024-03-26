@@ -130,7 +130,7 @@ body{
 @media(max-width:666px){
 
     .content{
-        display: flex;
+        
         flex-direction: column;
         text-align: center;
         padding: 0;
@@ -144,6 +144,12 @@ body{
         padding-top: 58px;
         color: black;
         display: none;
+    }
+    .show{
+        display: flex;
+    }
+    .content a{
+        color: black;
     }
     .logo{
         margin-top: 22px;
