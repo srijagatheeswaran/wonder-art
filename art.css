@@ -108,7 +108,9 @@ body{
 }
 @media(max-width:666px){
     .content{
-    
+        background-image: linear-gradient( rgba(10, 10, 10, 0.644),rgba(10, 10, 10, 0.644)) ,url("img/menu\ bg.jpg");
+        background-size: cover;
+        border-radius: 10px;
         flex-direction: column;
         text-align: center;
         padding: 0;
@@ -116,15 +118,15 @@ body{
         position: absolute;
         left: 0;
         width: 100%;
-        background-color: yellow;
         height: 300px;
         margin-top: 71px;   
         padding-top: 58px;
         display: none;
     }
     .content a{
-        color: black;
+        color: white;
     }
+    
     .show{
         display: flex;
 

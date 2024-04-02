@@ -192,9 +192,14 @@ th:last-child{
         text-align: center;
         align-items: center;
     }
+    .content a{
+        color: white;
+    }
     
     .content{
-        
+        background-size: cover;
+        border-radius: 10px;
+        background-image: linear-gradient( rgba(10, 10, 10, 0.644),rgba(10, 10, 10, 0.644)) ,url("img/menu\ bg.jpg");
         flex-direction: column;
         text-align: center;
         padding: 0;
@@ -202,7 +207,6 @@ th:last-child{
         position: absolute;
         left: 0;
         width: 100%;
-        background-color: yellow;
         height: 300px;
         margin-top: 71px;   
         padding-top: 58px;

@@ -60,6 +60,10 @@ body{
     font-size: 20px;
 
 }
+.orderbtn a{
+    color: white;
+    text-decoration: none;
+    }
 .orderbtn{
     padding: 15px;
     margin-top: 50px;
@@ -71,9 +75,11 @@ body{
     font-weight: 500;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
 .orderbtn:hover{
     color:rgb(92, 92, 240);
-    background-color: white;
+    background-color:rgb(18, 196, 196);
     transition: all 0.3s ease-in;
     
 }
@@ -128,9 +134,14 @@ body{
    }
 }
 @media(max-width:666px){
-
+    .content a{
+        color: white;
+    }
+    
     .content{
-        
+        background-size: cover;
+        border-radius: 10px;
+        background-image: linear-gradient( rgba(10, 10, 10, 0.644),rgba(10, 10, 10, 0.644)) ,url("img/menu\ bg.jpg");
         flex-direction: column;
         text-align: center;
         padding: 0;
@@ -138,19 +149,15 @@ body{
         position: absolute;
         left: 0;
         width: 100%;
-        background-color: yellow;
         height: 300px;
         margin-top: 71px;   
         padding-top: 58px;
-        color: black;
         display: none;
     }
     .show{
         display: flex;
     }
-    .content a{
-        color: black;
-    }
+    
     .logo{
         margin-top: 22px;
         margin-left: 28px;
