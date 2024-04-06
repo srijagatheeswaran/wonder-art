@@ -99,6 +99,7 @@ body{
 }
 .middle{
     padding: 50px 0;
+    padding-bottom: 15px;
 }
 .highlights{
     font-weight: 500;
@@ -199,8 +200,7 @@ hr{
     }
 .lastorderbtn{
     padding: 15px;
-    margin: 10px 0;
-    margin-left: 45%;
+    
     border-radius: 40px;
     font-size: 20px;
     color: white;
@@ -218,12 +218,24 @@ hr{
     transition: all 0.3s ease-in;
     
 }
+.lastbtn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 
 
 #menu{
     display: none;
 }
 @media(max-width:784px){
+    .content{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:800px){
     .orderbtn{
         
         font-size: 15px;

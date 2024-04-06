@@ -12,6 +12,11 @@
     <nav class="nav">
         <h1 class="logo">Wonder Art</h1>
         <i class="fa-solid fa-bars" id="menu" onclick="menu()"></i>
+        <div class="cartcount">
+            <a onclick="showcart()" class="carticon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <p id="count">0</p>
+
+        </div>
         <!-- <div class="logo">
             <img src="img/logo.png">
         </div> -->
@@ -22,28 +27,20 @@
             <a href="art.html">Creation</a>
             <a href="contect.html">Contact us</a>
             <a href="cart.html">My orders</a>
-            <a onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i></a>
+            
         </div>
     </nav>
     <div class="container">
-        <div class="middle">
-            <center><h1 class="highlights"><u>Creation</u> </h1></center>
-            <div class="products" id="main">
-                
-                
-            </div>
-        </div>
+
+    <div class="cartmain">
         <div class="cart" id="cart">
             <i class="fa-solid fa-xmark" id="remove" onclick="removecart()"></i>
             <h1>Cart</h1>
             <div class="empty" id="empty">
                 Your cart is empty
-
+            
             </div>
 
-            
-            
-        
             <hr>
             <div class="total">
                 
@@ -51,13 +48,27 @@
             <div class="total">
                 <p>Total</p>
                 <p id="total">0.00</p>
-                <button class="orderbtn">Conform order</button>
+                <button class="orderbtn" onclick="order()">Conform order</button>
                  
                  
+            </div>
+            <div class="order"  id="order">
+                your order in process...
+                <button  onclick="ok()" class="okbtn">OK</button>
             </div>
            
     
         </div>
+    </div>
+        <div class="middle">
+            <center><h1 class="highlights"><u>Creation</u> </h1></center>
+            <div class="products" id="main">
+                
+                
+            </div>
+        </div>
+    
+       
 
     </div>
     

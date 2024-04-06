@@ -92,12 +92,18 @@ function displayCart() {
     if (cart.length == 0) {
         document.getElementById('empty').innerHTML = "Your cart is empty";
         document.getElementById('total').innerHTML = "₹ "+0+".00";
+        document.getElementById('count').innerHTML = cart.length;
+
     } 
     else {
         document.getElementById('empty').innerHTML = cart.map((items) => {
             var {image, title, price} = items;
             total = total+price;
             document.getElementById('total').innerHTML = "₹ "+total+".00";
+            document.getElementById('count').innerHTML = cart.length;
+            
+
+            
 
             return `
                 <div class="cartProduct">
@@ -118,5 +124,22 @@ function removecart(){
     document.getElementById('cart').classList.toggle('cartshow');
 
 }
+function order(){
+    if (cart.length == 0) {
+
+
+    }
+    else{
+    document.getElementById('order').classList.add('showorder');
+   }
+        
+    
+    
+}
+function ok(){
+    document.getElementById('order').classList.remove('showorder')
+
+}
+
 
 
