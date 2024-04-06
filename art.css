@@ -43,8 +43,14 @@ body{
 .content a:hover{
     color: rgb(6, 223, 60);
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .middle{
     padding: 50px 0;
+    width: 100%;
 }
 .highlights{
     padding: 40px 0;
@@ -70,7 +76,7 @@ body{
 
 
 }
-.products img{
+.img{
     height: 300px;
     width: 300px;
     
@@ -88,14 +94,78 @@ body{
 .list button{
     padding:12px 15px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: none;
     outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
+.cart{
+    width: 300px;
+    margin: 80px 10px ;
+    height: max-content;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius:5px ;
+    position: absolute;
+    right: 0;
+    display: none;
+
+    
+
+}
+#remove{
+    display: none;
+}
+hr{
+    margin-top: 20px;
+
+}
+.cartProduct{
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+    
+}
+.cartProduct img{
+    height: 60px;
+    width: 60px;
+    border-radius: 70%;
+    border: 5px solid rgba(255, 255, 255, 0.788);
+}
+.cartProduct p{
+    font-size: 13px;
+} 
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+.orderbtn{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(92, 92, 240);
+}
+.orderbtn:hover{
+    color: rgb(92, 92, 240);
+    background-color: white;
+}
+
 #menu{
     display: none;
 }
-@media(max-width:784px){
+.cartshow{
+    display: block;
+}
+@media(max-width:1024px){
     
     .content a{
         font-size: 15px;
@@ -106,7 +176,7 @@ body{
         font-size: 20px;
    }
 }
-@media(max-width:666px){
+@media(max-width:768px){
     .content{
         background-image: linear-gradient( rgba(10, 10, 10, 0.644),rgba(10, 10, 10, 0.644)) ,url("img/menu\ bg.jpg");
         background-size: cover;
@@ -142,6 +212,14 @@ body{
         top:30px;
         right: 3%;
     }
+    #remove{
+        position: absolute;
+        right: 5%;
+        font-size: 15px;
+        top: 15px;
+        display: block;
+    }
+    
 }
 @media(max-width:460px){
     
@@ -169,7 +247,7 @@ body{
         width: 92%;
        } 
       
-    .products img {
+    .img {
         height: 284px;
         width: 277px;
     }  
@@ -178,5 +256,20 @@ body{
         padding: 8px;
         margin: 20px 13px;
     } 
+    .cart{
+        width: 276px;
+        margin: 80px 2px;
+         font-size: 13px;
 
-}
+    }
+    .cart h1{
+        font-size: 25px;
+    }
+    .cartProduct p {
+        font-size: 10px;
+    }
+    
+
+    }
+
+

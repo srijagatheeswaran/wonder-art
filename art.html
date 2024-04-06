@@ -21,60 +21,46 @@
             <a href="about.html">About Us</a>
             <a href="art.html">Creation</a>
             <a href="contect.html">Contact us</a>
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="cart.html">My orders</a>
+            <a onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </nav>
-    <div class="middle">
-        <center><h1 class="highlights"><u>Creation</u> </h1></center>
-        <div class="products">
-            <div class="pro1">
-                <img src="img/img1.png">
-                <div class="list">
-                    <p>₹500</p>
-                    <p>Mothers day special</p>
-                    <button id="addbtn" onclick="addProducts()">+</button>
-
-                </div>
+    <div class="container">
+        <div class="middle">
+            <center><h1 class="highlights"><u>Creation</u> </h1></center>
+            <div class="products" id="main">
                 
-            </div>
-            <div class="pro1">
-                <img src="img/img2.png">
-                <div class="list">
-                    <p>₹500</p>
-                    <p>Mothers day special</p>
-                    <button>+</button>
-
-                </div>
-                
-            </div><div class="pro1">
-                <img src="img/img3.png">
-                <div class="list">
-                    <p>₹500</p>
-                    <p>Mothers day special</p>
-                    <button>+</button>
-
-                </div>
-                
-            </div><div class="pro1">
-                <img src="img/img4.png">
-                <div class="list">
-                    <p>₹500</p>
-                    <p>Mothers day special</p>
-                    <button>+</button>
-
-                </div>
-                
-            </div><div class="pro1">
-                <img src="img/img5.png">
-                <div class="list">
-                    <p>₹500</p>
-                    <p>Mothers day special</p>
-                    <button>+</button>
-
-                </div>
                 
             </div>
         </div>
+        <div class="cart" id="cart">
+            <i class="fa-solid fa-xmark" id="remove" onclick="removecart()"></i>
+            <h1>Cart</h1>
+            <div class="empty" id="empty">
+                Your cart is empty
+
+            </div>
+
+            
+            
+        
+            <hr>
+            <div class="total">
+                
+            </div>
+            <div class="total">
+                <p>Total</p>
+                <p id="total">0.00</p>
+                <button class="orderbtn">Conform order</button>
+                 
+                 
+            </div>
+           
+    
+        </div>
+
+    </div>
+    
 
  <script src="script.js"></script>      
 
